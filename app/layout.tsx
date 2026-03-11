@@ -30,5 +30,12 @@ export default function RootLayout({
         {children}
       </body>
     </html>
+
+
+    //  <html lang="en">
+    //   <body>
+    //     <ContextProvider>{children}</ContextProvider>
+    //   </body>
+    // </html>
   );
 }

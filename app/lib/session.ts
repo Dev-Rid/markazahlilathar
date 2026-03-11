@@ -90,99 +90,6 @@ export async function deleteSession() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // import { cookies } from 'next/headers'
 // import { db } from '@/app/lib/db'
 // import { encrypt } from '@/app/lib/session'
@@ -224,47 +131,47 @@ export async function deleteSession() {
 // /**
 //  * Create session cookie
 //  */
-// // export async function createSession(
-// //   userId: string,
-// //   role?: "admin" | "teacher" | "student"
-// // ) {
-// //   const token = await encrypt({ userId, role });
+// export async function createSession(
+//   userId: string,
+//   role?: "admin" | "teacher" | "student"
+// ) {
+//   const token = await encrypt({ userId, role });
 
-// //   const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+//   const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
 
-// //    // 1. Create a session in the database
-// //   const data = await db
-// //     .insert(sessions)
-// //     .values({
-// //       userId: id,
-// //       expiresAt,
-// //     })
-// //     // Return the session ID
-// //     .returning({ id: sessions.id })
+//    // 1. Create a session in the database
+//   const data = await db
+//     .insert(sessions)
+//     .values({
+//       userId: id,
+//       expiresAt,
+//     })
+//     // Return the session ID
+//     .returning({ id: sessions.id })
  
-// //   const sessionId = data[0].id
+//   const sessionId = data[0].id
 
-// //     // 2. Encrypt the session ID
-// //   const session = await encrypt({ sessionId, expiresAt })
+//     // 2. Encrypt the session ID
+//   const session = await encrypt({ sessionId, expiresAt })
 
 
-// //   const cookieStore = await cookies();
-// //   cookieStore.set("session", token, {
-// //     httpOnly: true,
-// //     secure: process.env.NODE_ENV === "production",
-// //     sameSite: "lax",
-// //     path: "/",
-// //     expires: expiresAt,
-// //   });
-// // }
+//   const cookieStore = await cookies();
+//   cookieStore.set("session", token, {
+//     httpOnly: true,
+//     secure: process.env.NODE_ENV === "production",
+//     sameSite: "lax",
+//     path: "/",
+//     expires: expiresAt,
+//   });
+// }
 
-// // /**
-// //  * Delete session
-// //  */
-// // export async function deleteSession() {
-// //   const cookieStore = await cookies();
-// //   cookieStore.delete("session");
-// // }
+// /**
+//  * Delete session
+//  */
+// export async function deleteSession() {
+//   const cookieStore = await cookies();
+//   cookieStore.delete("session");
+// }
 
 
 
