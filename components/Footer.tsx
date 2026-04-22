@@ -48,9 +48,9 @@ export default function Footer() {
             <h4 className="text-white text-[12px] uppercase tracking-wider mb-4 font-bold">
               Contact
             </h4>
-            <p className="text-[13.5px] mb-2">14 Ahlus-Sunnah St, Surulere, Lagos</p>
-            <p className="text-[13.5px] mb-2">+234 801 234 5678</p>
-            <p className="text-[13.5px] mb-4">info@markazahlilAthar.org</p>
+            <p className="text-[13.5px] mb-2">Markaz Aahli-l-Athar, Opposite Christopher Clinic Junction, 1st Transformer, Abanla, Ologun-eru Ibadan, Oyo State</p>
+            <p className="text-[13.5px] mb-2">+234 812 559 7555</p>
+            <p className="text-[13.5px] mb-4">markazahlilAthar@gmail.com</p>
             <div className="bg-[#C8A44A]/10 border border-[#C8A44A]/20 rounded p-3">
               <p className="text-[11.5px] text-white/45">Office Hours</p>
               <p className="text-[13px] text-white/65 mt-1">Mon–Fri: 9AM – 6PM</p>

@@ -1,54 +1,3 @@
-// export default function Hero() {
-//   return (
-//     <section className="bg-blue text-white py-40">
-//       <div className="max-w-7xl mx-auto px-6 text-center">
-
-//         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-//           Welcome to <span className="text-orange-400">Markaz</span> Ahlil Athar
-//         </h1>
-
-//         <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto">
-//           A center dedicated to teaching the Qur'an, Sunnah, Arabic language
-//           and authentic Islamic knowledge for students of all ages.
-//         </p>
-
-//         <div className="mt-8 flex  gap-4">
-//           <button className="bg-white text-blue-900 text-xl px-6 py-3 rounded-lg font-semibold">
-//             Apply for Admission
-//           </button>
-    
-//           <button className="border border-white text-xl px-14 py-3 rounded-lg font-semibold">
-//             Learn More
-//           </button>
-//         </div>
-
-//       </div>
-//     </section>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import Link from "next/link";
 
 const stats = [
@@ -122,7 +71,7 @@ export default function HomePage() {
     <main>
       {/* Hero */}
       <section
-        className="bg-[#0B2545] text-white py-20 md:py-28"
+        className="bg-[#0B2545] text-white py-20 md:py-8"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='0.6' stroke-opacity='0.08' d='M40 2L49 29 78 40 49 51 40 78 31 51 2 40 31 29Z M40 18L46 35 62 40 46 45 40 62 34 45 18 40 34 35Z'/%3E%3C/svg%3E")`,
         }}
@@ -133,20 +82,20 @@ export default function HomePage() {
             Seek Knowledge Upon the{" "}
             <span className="text-[#C8A44A]">Manhaj of the Salaf</span>
           </h1>
-          <p className="text-white/70 text-lg max-w-lg mb-8 leading-relaxed">
+          <p className="text-white/70 text-xl max-w-lg mb-8 leading-relaxed">
             A centre dedicated to authentic Islamic education — Qur&apos;an, Hadeeth, Fiqh,
             Tawheed, and Arabic — grounded in the way of Ahlus-Sunnah.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
               href="/admissions"
-              className="bg-[#C8A44A] hover:bg-[#E2BF6E] text-[#0B2545] font-bold px-7 py-3 rounded text-sm transition-colors"
+              className="bg-[#C8A44A] hover:bg-[#E2BF6E] text-[#0B2545] font-bold px-7 py-5 rounded text-md transition-colors"
             >
               Apply for Admission
             </Link>
             <Link
               href="/about"
-              className="border border-white/50 hover:bg-white/10 text-white font-bold px-7 py-3 rounded text-sm transition-colors"
+              className="border border-white/50 hover:bg-white/10 text-white font-bold w-53 md:w-50 h-16 px-5 py-5 rounded text-md transition-colors flex text-center justify-center"
             >
               Learn More
             </Link>
@@ -155,7 +104,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats */}
-      <div className="bg-white border-b border-[#C8A44A]/20 py-6">
+      {/* <div className="bg-white border-b border-[#C8A44A]/20 py-6">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-[#C8A44A]/20">
             {stats.map((s, i) => (
@@ -166,7 +115,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* About Preview */}
       <section className="py-16 bg-[#FAF7EF]">
@@ -175,17 +124,17 @@ export default function HomePage() {
             <span className="inline-block bg-[#C8A44A]/15 text-[#956d0a] text-[11px] uppercase tracking-widest px-3 py-1 rounded-sm border border-[#C8A44A]/35 mb-4">
               Who We Are
             </span>
-            <h2 className="font-serif text-3xl md:text-4xl text-[#0B2545] mb-4 leading-tight">
+            <h2 className="font-serif text-3xl md:text-5xl text-[#0B2545] mb-4 leading-tight">
               A Legacy of Sacred Knowledge
             </h2>
             <div className="w-14 h-[3px] bg-[#C8A44A] mb-6" />
-            <p className="text-gray-600 mb-4 leading-relaxed">
+            <p className="text-gray-600 mb-4 leading-relaxed text-lg leading7">
               Markaz Ahlil Athar was founded with a single mission: to preserve and transmit
               authentic Islamic knowledge in accordance with the Qur&apos;an and the Sunnah, upon
               the understanding of the Salaf as-Saalih.
             </p>
             <p className="text-gray-600 mb-7 leading-relaxed">
-              We offer structured programmes for students of all ages, taught by qualified scholars
+              We offer structured programmes for students of all ages, taught by qualified teachers
               connected to the great scholars of Islam.
             </p>
             <Link
@@ -198,8 +147,9 @@ export default function HomePage() {
 
           <div className="bg-[#0B2545] rounded-lg p-8 text-white text-center">
             <p className="text-[#C8A44A] text-3xl tracking-widest mb-5">✦ ✦ ✦</p>
-            <p className="text-[#C8A44A] text-xl mb-4 leading-relaxed tracking-wide">
+            <p className="text-[#C8A44A] text-3xl mb-4 leading-relaxed tracking-wide">
               طَلَبُ العِلمِ فَرِيضَةٌ
+              
             </p>
             <p className="text-white/70 text-sm italic mb-2">
               &ldquo;Seeking knowledge is an obligation upon every Muslim.&rdquo;
@@ -227,11 +177,11 @@ export default function HomePage() {
                 key={i}
                 className="border border-[#C8A44A]/20 rounded-md p-7 text-center hover:-translate-y-1 hover:shadow-lg transition-all duration-200 bg-[#FAF7EF]"
               >
-                <div className="w-12 h-12 bg-[#0B2545] rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-15 h-15 bg-[#0B2545] rounded-full flex items-center justify-center mx-auto mb-4">
                   {d.icon}
                 </div>
-                <h3 className="font-serif text-[17px] text-[#0B2545] mb-2">{d.title}</h3>
-                <p className="text-[13.5px] text-[#6B8AB0] leading-relaxed">{d.desc}</p>
+                <h3 className="font-serif text-[20px] text-[#0B2545] mb-2">{d.title}</h3>
+                <p className="text-[15px] text-[#6B8AB0] leading-relaxed">{d.desc}</p>
               </div>
             ))}
           </div>
@@ -239,7 +189,7 @@ export default function HomePage() {
           <div className="mt-10">
             <Link
               href="/courses"
-              className="bg-[#0B2545] hover:bg-[#163E7C] text-white font-bold px-6 py-3 rounded text-sm transition-colors inline-block"
+              className="bg-[#0B2545] hover:bg-[#163E7C] text-white font-bold px-7 py-4 rounded text-sm transition-colors inline-block"
             >
               View All Courses →
             </Link>
@@ -251,7 +201,7 @@ export default function HomePage() {
       <section className="py-16 bg-[#0B2545] text-center">
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-[#C8A44A] text-3xl tracking-widest mb-5">✦ ✦ ✦</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">
+          <h2 className="font-serif text-5xl md:text-4xl text-white mb-4">
             Begin Your Journey of Knowledge
           </h2>
           <p className="text-white/70 max-w-md mx-auto mb-8 text-base leading-relaxed">

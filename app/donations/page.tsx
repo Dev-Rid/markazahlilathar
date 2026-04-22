@@ -159,15 +159,17 @@ export default function DonationsPage() {
 
           {/* Bank Details */}
           <div className="bg-[#EEE8D9] rounded-lg p-6 text-center">
-            <h4 className="font-serif text-[#0B2545] font-bold mb-2 text-base">Bank Transfer Details</h4>
-            <p className="text-[14px] text-[#6B8AB0]">
-              Bank: First Bank Nigeria &nbsp;|&nbsp; Account Name: Markaz Ahlil Athar &nbsp;|&nbsp;
-              Account No: 3012 3456 78
+            <h4 className="text-[22px] font-serif text-[#0B2545] font-bold mb-2 text-base">Bank Transfer Details</h4>
+            <p className="text-[20px] text-[#6B8AB0]">
+              Bank: Jaiz Bank Nigeria &nbsp;|&nbsp; Account Name: Markaz Aahli-l-Athar &nbsp;|&nbsp;
+              Account No: 0020 3504 39
             </p>
-            <p className="text-[12.5px] text-[#6B8AB0] mt-2">
+
+            {/* For zakat-eligible donations */}
+            {/* <p className="text-[12.5px] text-[#6B8AB0] mt-2">
               For zakat-eligible donations or to request a receipt:{" "}
               <span className="text-[#0B2545]">donations@markazahlilAthar.org</span>
-            </p>
+            </p> */}
           </div>
         </div>
       </section>
