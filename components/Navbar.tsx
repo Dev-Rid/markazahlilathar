@@ -26,7 +26,7 @@ export default function Navbar() {
         <Link href="/" className="font-serif text-[22px] font-bold text-white tracking-wide">
           {/* <span className="text-[#C8A44A]">Markaz</span> Ahlil Athar */}
           <Image 
-            src="/markazlogo.jpg"
+            src="/markazlogo1.png"
             width={500}
             height={500}
             alt="logo"
