@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -23,7 +24,14 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-[80px] flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="font-serif text-[22px] font-bold text-white tracking-wide">
-          <span className="text-[#C8A44A]">Markaz</span> Ahlil Athar
+          {/* <span className="text-[#C8A44A]">Markaz</span> Ahlil Athar */}
+          <Image 
+            src="/markazlogo.jpg"
+            width={500}
+            height={500}
+            alt="logo"
+            className="h-15 w-15 rounded-2xl"
+            />
         </Link>
 
         {/* Desktop Links */}
