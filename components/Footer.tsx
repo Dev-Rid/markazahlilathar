@@ -17,10 +17,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-[19px] font-bold text-white mb-3">
+            <h3 className="font-serif text-2xl font-bold text-white mb-3">
               <span className="text-[#C8A44A]">Markaz</span> Ahlil Athar
             </h3>
-            <p className="text-[13.5px] leading-relaxed">
+            <p className="text-md leading-relaxed">
               A centre of authentic Islamic education, teaching the Qur&apos;an and
               Sunnah upon the manhaj of the Salaf as-Saalih since 2010.
             </p>
@@ -29,14 +29,14 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white text-[12px] uppercase tracking-wider mb-4 font-bold">
+            <h4 className="text-white text-md uppercase tracking-wider mb-4 font-bold">
               Quick Links
             </h4>
             {quickLinks.map((l) => (
               <Link
                 key={l.name}
                 href={l.href}
-                className="block text-white/55 hover:text-[#C8A44A] text-[13.5px] mb-2 transition-colors"
+                className="block text-white/55 hover:text-[#C8A44A] text-md mb-2 transition-colors"
               >
                 {l.name}
               </Link>
@@ -45,18 +45,14 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-white text-[12px] uppercase tracking-wider mb-4 font-bold">
+            <h4 className="text-white text-xl uppercase tracking-wider mb-4 font-bold">
               Contact
             </h4>
-            <p className="text-[13.5px] mb-2">Markaz Aahli-l-Athar, Opposite Christopher Clinic Junction, 1st Transformer, Abanla, Ologun-eru Ibadan, Oyo State</p>
+            <p className="text-md mb-2">Markaz Aahli-l-Athar, 1st transformer Abanla, Ologuneru, Eleyele Ibadan, Oyo State Nigeria</p>
             <p className="text-[13.5px] mb-2">+234 812 559 7555</p>
             <p className="text-[13.5px] mb-4">markazahlilAthar@gmail.com</p>
-            <div className="bg-[#C8A44A]/10 border border-[#C8A44A]/20 rounded p-3">
-              <p className="text-[11.5px] text-white/45">Office Hours</p>
-              <p className="text-[13px] text-white/65 mt-1">Mon–Fri: 9AM – 6PM</p>
-              <p className="text-[13px] text-white/65">Saturday: 9AM – 1PM</p>
-            </div>
-          </div>
+            
+                      </div>
         </div>
 
         <div className="border-t border-white/10 pt-5 flex flex-col md:flex-row justify-between text-[12.5px]">
