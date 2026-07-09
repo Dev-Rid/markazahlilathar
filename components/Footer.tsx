@@ -52,7 +52,7 @@ export default function Footer() {
             <p className="text-[13.5px] mb-2">+234 812 559 7555</p>
             <p className="text-[13.5px] mb-4">markazahlilAthar@gmail.com</p>
             
-                      </div>
+          </div>
         </div>
 
         <div className="border-t border-white/10 pt-5 flex flex-col md:flex-row justify-between text-[12.5px]">

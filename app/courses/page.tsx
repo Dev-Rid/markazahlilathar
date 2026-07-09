@@ -81,7 +81,7 @@ export default function CoursesPage() {
     <main>
       {/* Header */}
       <section
-        className="bg-[#0B2545] py-14"
+        className="bg-[#0B2545] py-34"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='0.6' stroke-opacity='0.08' d='M40 2L49 29 78 40 49 51 40 78 31 51 2 40 31 29Z M40 18L46 35 62 40 46 45 40 62 34 45 18 40 34 35Z'/%3E%3C/svg%3E")`,
         }}
