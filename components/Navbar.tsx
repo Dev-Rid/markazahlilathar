@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
@@ -18,6 +20,7 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname()
 
   return (
     <nav className="w-full sticky top-0 z-50 bg-[#0B2545] border-b border-[#C8A44A]/20 shadow-md">
@@ -40,7 +43,12 @@ export default function Navbar() {
             <li key={link.name}>
               <Link
                 href={link.href}
-                className="relative group text-white/80 hover:text-[#C8A44A] text-[18px] px-3 py-2 rounded-sm transition-colors duration-200 hover:bg-[#C8A44A]/10 block"
+                className={`relative group textwhite/80 hovertext-[#C8A44A] text-[18px] px-3 py-2 rounded-sm transition-colors duration-200 hover:bg-[#C8A44A]/10 block 
+                  ${
+                    pathname === link.href 
+                      ? "text-[#C8A44A]"
+                      : "text-white hover:text-[#C8A44A]"
+                  }`}
               >
                 {link.name}
                 <span className="absolute left-3 -bottom-0.5 w-0 h-[2px] bg-[#C8A44A] transition-all duration-300 group-hover:w-[calc(100%-24px)]" />
